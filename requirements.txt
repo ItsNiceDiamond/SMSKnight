@@ -1,7 +1,5 @@
 requests
-
 datetime
-sys
 time
 argparse
 os
